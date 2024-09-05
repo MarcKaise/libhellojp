@@ -1,10 +1,11 @@
-package(default_visibility = ["//visibility:public"])
+load("@rules_cc//cc:defs.bzl", "cc_library")
 
 cc_library(
     name = "libhellojp",
     srcs = ["hellojp.cc"],
     hdrs = ["hellojp.h"],
     deps = [],
+    visibility = ["//visibility:public"],
 )
 
 cc_test(
